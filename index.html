@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeroVerse - Marvel Style</title>
+    <!-- Nhúng file CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts Marvel Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo">HERO<span>VERSE</span></div>
+        <nav>
+            <a href="#hero">Trang chủ</a>
+            <a href="#movies">Phim nổi bật</a>
+            <a href="#heroes">Anh hùng</a>
+        </nav>
+        <button class="btn-primary">Tham gia</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="badge">BOM TẤN 2026</span>
+            <h1>KỶ NGUYÊN BÓNG TỐI</h1>
+            <p>Khi các đa vũ trụ va chạm, ranh giới giữa chính và tà bị xóa bỏ. Cuộc chiến cuối cùng để bảo vệ thực tại bắt đầu từ đây.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="playMovie('Trailer Kỷ Nguyên Bóng Tối')"><i class="fa-solid fa-play"></i> Xem Trailer</button>
+                <button class="btn-secondary"><i class="fa-solid fa-info-circle"></i> Chi tiết</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Movies Grid Section -->
+    <section id="movies" class="movies-section">
+        <h2 class="section-title">DANH SÁCH PHIM</h2>
+        <div class="movie-grid">
+            
+            <div class="movie-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=600&auto=format&fit=crop" alt="Shadow Guardian">
+                    <div class="tag">Mới</div>
+                </div>
+                <div class="card-info">
+                    <h3>Shadow Guardian</h3>
+                    <p>Hành động • Viễn tưởng</p>
+                    <button class="btn-watch" onclick="playMovie('Shadow Guardian')"><i class="fa-solid fa-play"></i> Xem ngay</button>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=600&auto=format&fit=crop" alt="Cyber Core">
+                </div>
+                <div class="card-info">
+                    <h3>Cyber Core: 2099</h3>
+                    <p>Viễn tưởng • Chiêu thuật</p>
+                    <button class="btn-watch" onclick="playMovie('Cyber Core: 2099')"><i class="fa-solid fa-play"></i> Xem ngay</button>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=600&auto=format&fit=crop" alt="Cosmic Vengeance">
+                </div>
+                <div class="card-info">
+                    <h3>Cosmic Vengeance</h3>
+                    <p>Kỳ ảo • Vũ trụ</p>
+                    <button class="btn-watch" onclick="playMovie('Cosmic Vengeance')"><i class="fa-solid fa-play"></i> Xem ngay</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Heroes Section -->
+    <section id="heroes" class="movies-section">
+        <h2 class="section-title">DANH SÁCH ANH HÙNG</h2>
+        <p style="color: #999;">Nội dung đang được cập nhật...</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 HeroVerse. Tất cả quyền được bảo lưu.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
